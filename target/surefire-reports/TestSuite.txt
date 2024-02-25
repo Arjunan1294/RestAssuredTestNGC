@@ -1,0 +1,24 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 3.568 s <<< FAILURE! - in TestSuite
+shouldBeAbleToGetAPlaylist(com.spotify.oauth2.tests.PlaylistTests)  Time elapsed: 2.741 s  <<< FAILURE!
+java.lang.RuntimeException: Abort...Unable to return token
+	at com.spotify.oauth2.tests.PlaylistTests.shouldBeAbleToGetAPlaylist(PlaylistTests.java:85)
+
+shouldBeAbleToCreateAPlaylist(com.spotify.oauth2.tests.PlaylistTests)  Time elapsed: 2.742 s  <<< FAILURE!
+java.lang.RuntimeException: Abort...Unable to return token
+	at com.spotify.oauth2.tests.PlaylistTests.shouldBeAbleToCreateAPlaylist(PlaylistTests.java:53)
+
+shouldNotBeAbleToCreateAPlaylistWithExpiredToken(com.spotify.oauth2.tests.PlaylistTests)  Time elapsed: 2.742 s  <<< FAILURE!
+java.net.UnknownHostException: api.spotify.com
+	at com.spotify.oauth2.tests.PlaylistTests.shouldNotBeAbleToCreateAPlaylistWithExpiredToken(PlaylistTests.java:158)
+
+shouldNotBeAbleToCreateAPlaylistWithoutName(com.spotify.oauth2.tests.PlaylistTests)  Time elapsed: 2.794 s  <<< FAILURE!
+java.lang.RuntimeException: Abort...Unable to return token
+	at com.spotify.oauth2.tests.PlaylistTests.shouldNotBeAbleToCreateAPlaylistWithoutName(PlaylistTests.java:129)
+
+shouldBeAbleToUpdateAPlaylist(com.spotify.oauth2.tests.PlaylistTests)  Time elapsed: 2.839 s  <<< FAILURE!
+java.lang.RuntimeException: Abort...Unable to return token
+	at com.spotify.oauth2.tests.PlaylistTests.shouldBeAbleToUpdateAPlaylist(PlaylistTests.java:111)
+
